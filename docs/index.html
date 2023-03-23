@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home - Trelliseekser</title>
+    <meta name="description" content="Logseq の ToDo List v1.16.4 から Trello のチェックリストに投げるようにコンバートをかける簡易的なフォーム。">
+    <meta name="author" content="アルム＝バンド">
+
+    <link href="./apple-touch-icon.png" rel="apple-touch-icon">
+    <meta name="theme-color" content="#992529">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Bredtn_1et">
+    <meta name="twitter:title" content="Home" />
+    <meta name="twitter:description" content="Logseq の ToDo List v1.16.4 から Trello のチェックリストに投げるようにコンバートをかける簡易的なフォーム。" />
+    <meta name="twitter:image" content="https://source.unsplash.com/hnkYzDJFXfQ/1920x1080" />
+    <meta property="og:type" content="website">
+    <meta name="og:title" content="Home">
+    <meta name="og:site_name" content="Trelliseekser">
+    <meta name="og:description" content="Logseq の ToDo List v1.16.4 から Trello のチェックリストに投げるようにコンバートをかける簡易的なフォーム。">
+    <meta name="og:image" content="https://source.unsplash.com/hnkYzDJFXfQ/1920x1080">
+    <meta name="og:url" content="https://arm-band.github.io/test-trelliseeker/" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="./css/index.css" rel="stylesheet">
+</head><body>
+<header class="l-header">
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand my-0" href="./">Trelliseekser</a>
+        </div>
+    </nav>
+</header><main class="l-main">
+    <section class="container py-5">
+        <h1><i class="fa-solid fa-fw fa-eye me-2" aria-hidden="true"></i>Home</h1>
+        <p>Logseq の ToDo List v1.16.4 から Trello のチェックリストに投げるようにコンバートをかける簡易的なフォーム。</p>
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <h2 class="mt-4 mb-3">Original</h2>
+                <textarea name="original" id="original" rows="28" class="form-control w-100" placeholder="
+Type to search, enter to create
+Marker:
+ALL
+Priority:
+ALL
+Today
+
+TODO Visionary Tuning
+2023-01-01
+
+
+TODO Illusion Seeker
+2023-01-01
+
+
+Scheduled
+
+TODO Illusionary Blast
+2023-12-31
+
+"></textarea>
+            </div>
+            <div class="col-12 col-lg-6">
+                <h2 class="mt-4 mb-3">Converted result</h2>
+                <textarea name="converted-result" id="converted-result" rows="28" class="form-control w-100" placeholder="TODO [2023-12-31] Illusion Seeker
+
+TODO [2023-01-01] Visionary Tuning
+
+TODO [2023-01-01] Illusionary Blast
+"></textarea>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="l-footer w-100">
+    <small class="d-block pt-2 pb-3 text-center">© 2023 アルム＝バンド</small>
+</footer><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="./js/app.min.js" defer></script></body>
+</html>
