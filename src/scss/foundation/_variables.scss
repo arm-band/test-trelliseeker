@@ -3,7 +3,7 @@
 @use "sass:color";
 
 $color: #333;
-$main-color: #ccc;
+$main-color: #992529;
 $main-color_d: color.scale($main-color, $lightness: -8%);
 $main-color_l: color.scale($main-color, $lightness: 8%);
 $accent-color: color.adjust($main-color, $hue: 150deg);

@@ -2,16 +2,13 @@
 <%
     parameters = {
         title: 'Home',
-        description: 'Gulpを使用した最低限のフレームワークです。',
+        description: 'Logseq の ToDo List v1.16.4 から Trello のチェックリストに投げるようにコンバートをかける簡易的なフォーム。',
         ogp: {
             card: 'summary_large_image',
             account: 'Bredtn_1et',
             type: 'website',
-            image: 'img/hinomotogo.png'
+            image: 'https://source.unsplash.com/hnkYzDJFXfQ/1920x1080'
         },
-        address: '北海道札幌市北区丸山町字辛亥五ノ村30-90',
-        postalcode: '001-0000',
-        tel: '000-000-0000',
         errFlag: false
     }
 -%>
@@ -20,22 +17,44 @@
 <%- include('partial/_header') -%>
 <main class="l-main">
     <section class="container py-5">
-        <h1><i class="fa-solid fa-fw fa-long-arrow-alt-up me-2" aria-hidden="true"></i><%= parameters.title %><small class="ml-2" id="hello"></small></h1>
+        <h1><i class="fa-solid fa-fw fa-eye me-2" aria-hidden="true"></i><%= parameters.title %></h1>
         <p><%= parameters.description %></p>
-    </section>
-    <section class="container pb-5">
-        <h2>連絡先情報</h2>
-        <div class="list-group mb-3">
-            <div class="list-group-item list-group-item-action">
-                <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1"><%= parameters.author %></h5>
-                    <small>※住所・郵便番号・電話番号はいずれもダミーです</small>
-                </div>
-                <p class="mb-1"><span class="c-address c-address_postalcode mr-1"><%= parameters.postalcode %></span> <span class="address"><%= parameters.address %></span></p>
-                <small><a href="tel:<%= parameters.tel %>"><span class="c-address c-address_tel mr-1"><%= parameters.tel %></span></a></small>
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <h2 class="mt-4 mb-3">Original</h2>
+                <textarea name="original" id="original" rows="28" class="form-control w-100" placeholder="
+Type to search, enter to create
+Marker:
+ALL
+Priority:
+ALL
+Today
+
+TODO Visionary Tuning
+2023-01-01
+
+
+TODO Illusion Seeker
+2023-01-01
+
+
+Scheduled
+
+TODO Illusionary Blast
+2023-12-31
+
+"></textarea>
+            </div>
+            <div class="col-12 col-lg-6">
+                <h2 class="mt-4 mb-3">Converted result</h2>
+                <textarea name="converted-result" id="converted-result" rows="28" class="form-control w-100" placeholder="TODO [2023-12-31] Illusion Seeker
+
+TODO [2023-01-01] Visionary Tuning
+
+TODO [2023-01-01] Illusionary Blast
+"></textarea>
             </div>
         </div>
-        <p>※住所・郵便番号・電話番号はいずれもダミーです。</p>
     </section>
 </main>
 <%- include('partial/_footer') -%>
